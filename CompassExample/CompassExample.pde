@@ -1,8 +1,52 @@
+/************************************************************************/
+/*									*/
+/*  CompassExample.pde	-- Example Sketch for CMPS			*/
+/*									*/
+/************************************************************************/
+/*  Author:	Jon Peyron						*/
+/*  Copyright (c) 2015, Digilent Inc.  	    				*/
+/************************************************************************/
+/*                                                                      */
+/*  This library is free software; you can redistribute it and/or       */
+/*  modify it under the terms of the GNU Lesser General Public          */
+/*  License as published by the Free Software Foundation; either        */
+/*  version 2.1 of the License, or (at your option) any later version.  */
+/*                                                                      */
+/*  This library is distributed in the hope that it will be useful,     */
+/*  but WITHOUT ANY WARRANTY; without even the implied warranty of      */
+/*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU   */
+/*  Lesser General Public License for more details.                     */
+/*                                                                      */
+/*  You should have received a copy of the GNU Lesser General Public    */
+/*  License along with this library; if not, write to the Free Software */
+/*  Foundation, Inc.,51 Franklin St, Fifth Floor, Boston, MA 02110-1301 */ 
+/*  USA                                                                 */
+/********************************************************************** */
+/*  Module Description:							*/
+/*									*/
+/*  This sketch is an example on on how to use the CMPS to get degrees  */
+/*  and direction with the CMPS library.                                */
+/*                                                                      */
+/************************************************************************/
+/*  Revision History:							*/
+/*									*/
+/*  6/12/2015(Jon P): Created                                           */
+/*									*/
+/************************************************************************/
+/************************************************************************/
+/*  Board Support:                       				*/
+/*  ChipKIT PRO MX4:                  I2C #2 J6 (Top)                   */
+/*                                              			*/
+/************************************************************************/
+
+
+
 #include <CMPS.h>
 
 
 /*
 CMPS with I2C example. This will display directions pmod CMPS compass
+
 */
 // the sensor communicates using I2C, so include the library:
  #include <Wire.h> 
